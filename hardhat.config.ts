@@ -38,7 +38,7 @@ const config: HardhatUserConfig = {
       accounts,
       forking: {
         url: ARCHIVE_URL, // https://eth-ropsten.alchemyapi.io/v2/SECRET`,
-        blockNumber: 9389313,
+        blockNumber: 12109629  // 9389313,
       },
     },
   },
