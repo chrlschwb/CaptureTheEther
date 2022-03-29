@@ -8,7 +8,7 @@ import { sleep } from "../utils/promise";
 let accounts: Signer[];
 let eoa: Signer;
 let contract: Contract; // challenge contract
-let attacker: Contract;
+let attackr: Contract;
 
 before(async () => {
   accounts = await ethers.getSigners();
