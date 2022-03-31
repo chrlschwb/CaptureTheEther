@@ -15,7 +15,7 @@ before(async () => {
 
 it("solves the challenge", async function () {
   const nickname = ethers.utils.formatBytes32String(`Charlie`)
-  // const tx = await contract.setNickname(nickname);
-  // const txHash = tx && tx.hash
-  // expect(txHash).to.not.be.undefined
+  const tx = await contract.setNickname(nickname);
+  const txHash = tx && tx.hash
+  expect(txHash).to.not.be.undefined
 });
