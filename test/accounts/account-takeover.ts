@@ -42,8 +42,10 @@ it("solves the challenge", async function () {
   console.log(`TX 2`, JSON.stringify(tx2, null, 4));
 
   // this makes exploit possible, same r (derived from k)
+
   expect(tx1.r).to.eq(tx2.r)
 
+  // comment
   // can now retrieve the private key as described in wikipedia
   // i did it in python for better low level elliptic curve libraries
   const signer = new ethers.Wallet(

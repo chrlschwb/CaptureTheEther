@@ -49,7 +49,6 @@ contract SimpleERC223Token {
     }
 
     event Approval(address indexed owner, address indexed spender, uint256 value);
-
     mapping(address => mapping(address => uint256)) public allowance;
 
     function approve(address spender, uint256 value)
