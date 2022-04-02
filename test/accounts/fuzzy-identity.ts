@@ -18,6 +18,7 @@ before(async () => {
     "FuzzyIdentityChallenge"
   );
   contract = challengeFactory.attach(
+
     `0x16d20B998E593eaFffB676f9F5923B1E2173234B`
   );
 });
@@ -26,7 +27,7 @@ const NONCE = BigNumber.from(`0`);
 
 // this takes ages
 // an eth address is 20 bytes = 40 hex chars long
-// badc0de is 7 hex chars
+// badc0de is 7 hex characters
 // 16^7 is 268,435,456 (!) it can occur on (34?) different positions
 // but it's still several million hashes that need to be computed
 // 16^7 / 34 = 7,895,160.470588235
